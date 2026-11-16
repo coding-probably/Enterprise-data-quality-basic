@@ -107,4 +107,3 @@ categorical distributions; it is not a full statistical drift detector.
 - The program does not delete, overwrite, or automatically correct source data.
 - This is a single-process CSV prototype. For production use, add run history, persistent storage,
   authentication, audit logs, stronger drift metrics, and tests.
->>>>>>> a7c72b9 (Initial commit)
