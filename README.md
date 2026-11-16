@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 # Enterprise Data Quality & Observability Platform
 
 A basic Python + pandas implementation that combines dataset profiling, automated validation,
