@@ -1,0 +1,12 @@
+Issue_ID,Row_Number,Column_Name,Issue_Type,Current_Value,Rule,Severity
+1,16,Customer_ID,Missing_Value,NULL,Required column 'Customer_ID' contains missing values.,High
+2,15,Email,Missing_Value,NULL,Required column 'Email' contains missing values.,High
+3,17,Customer_ID,Duplicate_Value,1003.0,Column 'Customer_ID' contains duplicate values.,High
+4,14,Age,Out_Of_Range,105,"Values in 'Age' are outside range {'min': 18, 'max': 100}.",Medium
+5,18,Age,Out_Of_Range,-4,"Values in 'Age' are outside range {'min': 18, 'max': 100}.",Medium
+6,18,Revenue,Out_Of_Range,-500.0,Values in 'Revenue' are outside range {'min': 0}.,Medium
+7,14,Email,Invalid_Format,invalid-email,Values in 'Email' do not match the configured pattern.,Medium
+8,14,Status,Invalid_Category,Pending,Column 'Status' contains values outside allowed categories.,Medium
+9,19,Status,Invalid_Category,Unknown,Column 'Status' contains values outside allowed categories.,Medium
+10,14,Joining_Date,Invalid_Date,2027-02-01,Column 'Joining_Date' violates configured date rules.,Medium
+11,14,Revenue,Outlier,250000.0,Potential statistical outliers detected in 'Revenue' using IQR.,Low

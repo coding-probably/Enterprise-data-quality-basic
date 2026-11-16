@@ -1,0 +1,10 @@
+issue_id,rule_id,dimension,column,affected_rows,row_indexes,sample_values,severity,message,detected_at_utc,status
+ISS-00001,NOT_NULL,completeness,Customer_ID,1,15,,high,Required column 'Customer_ID' contains missing values.,2026-11-16T03:51:17.106908+00:00,OPEN
+ISS-00002,NOT_NULL,completeness,Email,1,14,,high,Required column 'Email' contains missing values.,2026-11-16T03:51:17.107315+00:00,OPEN
+ISS-00003,UNIQUE_COLUMN,uniqueness,Customer_ID,1,16,1003.0,high,Column 'Customer_ID' contains duplicate values.,2026-11-16T03:51:17.112679+00:00,OPEN
+ISS-00004,VALUE_RANGE,validity,Age,2,13;17,105;-4,medium,"Values in 'Age' are outside range {'min': 18, 'max': 100}.",2026-11-16T03:51:17.115339+00:00,OPEN
+ISS-00005,VALUE_RANGE,validity,Revenue,1,17,-500.0,medium,Values in 'Revenue' are outside range {'min': 0}.,2026-11-16T03:51:17.116178+00:00,OPEN
+ISS-00006,REGEX_FORMAT,validity,Email,1,13,invalid-email,medium,Values in 'Email' do not match the configured pattern.,2026-11-16T03:51:17.117804+00:00,OPEN
+ISS-00007,ALLOWED_VALUES,validity,Status,2,13;18,Pending;Unknown,medium,Column 'Status' contains values outside allowed categories.,2026-11-16T03:51:17.118916+00:00,OPEN
+ISS-00008,DATE_RULE,validity,Joining_Date,1,13,2027-02-01,medium,Column 'Joining_Date' violates configured date rules.,2026-11-16T03:51:17.121817+00:00,OPEN
+ISS-00009,OUTLIER,accuracy,Revenue,1,13,250000.0,low,Potential statistical outliers detected in 'Revenue' using IQR.,2026-11-16T03:51:17.124022+00:00,OPEN

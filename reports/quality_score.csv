@@ -1,0 +1,8 @@
+dimension,score,weight
+completeness,92.0,0.2
+accuracy,96.0,0.2
+uniqueness,96.0,0.15
+consistency,100.0,0.15
+validity,88.0,0.15
+timeliness,100.0,0.15
+OVERALL,95.2,1.0

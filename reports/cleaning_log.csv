@@ -1,0 +1,2 @@
+Issue_ID,Row_Number,Column_Name,Issue_Type,Original_Value,New_Value,Action,Timestamp
+11,14,Revenue,Outlier,250000.0,ROW DELETED,Delete affected row,2026-11-16T09:21:50

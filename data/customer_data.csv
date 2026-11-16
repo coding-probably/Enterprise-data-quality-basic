@@ -1,0 +1,26 @@
+Customer_ID,Email,Age,Status,City,Country,Joining_Date,Last_Updated,Revenue
+1001.0,aarav.sharma@example.com,24,Active,Delhi,IN,2023-06-15,2026-11-14 08:30:00,12500.5
+1002.0,riya.verma@example.com,29,Inactive,Mumbai,IN,2022-11-03,2026-11-14 08:25:00,9800.0
+1003.0,kabir.mehta@example.com,35,Active,Bengaluru,IN,2021-02-18,2026-11-14 08:20:00,18750.75
+1004.0,sana.khan@example.com,42,Active,Delhi,IN,2020-09-21,2026-11-13 23:45:00,22100.0
+1005.0,dev.patel@example.com,31,Inactive,Pune,IN,2022-04-10,2026-11-14 07:55:00,7600.25
+1006.0,meera.iyer@example.com,27,Active,Chennai,IN,2024-01-05,2026-11-14 08:10:00,14300.0
+1007.0,arjun.singh@example.com,38,Active,DELHI,IN,2019-07-12,2026-11-14 08:00:00,31200.0
+1008.0,nisha.rao@example.com,22,Inactive,Hyderabad,IN,2023-03-29,2026-11-14 07:40:00,6500.0
+1009.0,ishaan.gupta@example.com,46,Active,Kolkata,IN,2018-12-01,2026-11-14 07:30:00,27400.0
+1010.0,tara.joshi@example.com,33,Active,Jaipur,IN,2021-08-16,2026-11-14 07:20:00,11900.0
+1011.0,om.bose@example.com,26,Inactive,Ahmedabad,IN,2024-05-22,2026-11-14 07:10:00,8300.0
+1012.0,anaya.reddy@example.com,40,Active,Delhi,IN,2019-03-14,2026-11-14 06:55:00,19800.0
+1013.0,vivaan.nair@example.com,19,Active,Kochi,IN,2025-01-11,2026-11-14 06:40:00,4200.0
+1014.0,invalid-email,105,Pending,Mumbai,IN,2027-02-01,2026-11-10 10:00:00,250000.0
+1015.0,   ,28,Active,delhi,IN,2022-06-30,2026-11-14 06:20:00,9100.0
+,missing.id@example.com,36,Inactive,Pune,IN,2020-10-09,2026-11-14 06:00:00,13200.0
+1003.0,duplicate.id@example.com,30,Active,Bengaluru,IN,2023-02-14,2026-11-14 05:45:00,15500.0
+1018.0,farah.ali@example.com,-4,Active,Lucknow,IN,2021-12-12,2026-11-14 05:30:00,-500.0
+1019.0,rohan.das@example.com,34,Unknown,Kolkata,IN,2022-07-07,2026-11-14 05:15:00,10400.0
+1020.0,kiara.malhotra@example.com,25,Active,Delhi,IN,2024-08-19,2026-11-14 05:00:00,8900.0
+1021.0,neel.kapoor@example.com,52,Inactive,Surat,IN,2017-05-25,2026-11-14 04:45:00,16700.0
+1022.0,zoya.mirza@example.com,30,Active,Chandigarh,IN,2023-09-09,2026-11-14 04:30:00,11200.0
+1023.0,aditya.roy@example.com,41,Active,DELHI ,IN,2020-01-20,2026-11-14 04:15:00,20500.0
+1024.0,priya.naidu@example.com,23,Inactive,Visakhapatnam,IN,2024-03-03,2026-11-14 04:00:00,7200.0
+1025.0,karan.sethi@example.com,37,Active,Gurugram,IN,2021-11-11,2026-11-14 03:45:00,18100.0

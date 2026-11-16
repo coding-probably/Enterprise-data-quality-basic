@@ -1,0 +1,79 @@
+{
+  "dataset_path": "data/customer_data.csv",
+  "reports_dir": "reports",
+  "visualizations_dir": "visualizations",
+  "history_dir": "history",
+  "categorical_columns": [],
+  "schema": {
+    "expected_columns": [
+      "Customer_ID",
+      "Age",
+      "Email",
+      "City",
+      "Joining_Date"
+    ],
+    "allow_extra_columns": true
+  },
+  "quality_weights": {
+    "completeness": 0.2,
+    "accuracy": 0.2,
+    "uniqueness": 0.15,
+    "consistency": 0.15,
+    "validity": 0.15,
+    "timeliness": 0.15
+  },
+  "rules": {
+    "required_columns": [
+      "Customer_ID"
+    ],
+    "blank_check_columns": [
+      "Customer_ID",
+      "Email"
+    ],
+    "unique_columns": [
+      "Customer_ID"
+    ],
+    "unique_combinations": [],
+    "check_duplicate_rows": true,
+    "expected_types": {
+      "Customer_ID": "text",
+      "Age": "integer",
+      "Joining_Date": "date"
+    },
+    "ranges": {
+      "Age": {
+        "min": 18,
+        "max": 100
+      }
+    },
+    "regex": {
+      "Email": "^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}$"
+    },
+    "allowed_values": {},
+    "date_rules": {
+      "Joining_Date": {
+        "not_in_future": true
+      }
+    },
+    "foreign_keys": [],
+    "standard_values": {},
+    "accuracy_checks": [],
+    "outlier_columns": [
+      "Age"
+    ],
+    "outlier_method": "iqr",
+    "zscore_threshold": 3.0,
+    "freshness": {
+      "max_age_hours": 48,
+      "timestamp_column": ""
+    },
+    "distribution_monitoring": {
+      "enabled": false,
+      "columns": [
+        "City"
+      ],
+      "max_category_share_change": 0.2,
+      "update_baseline": false
+    }
+  }
+}

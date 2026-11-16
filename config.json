@@ -1,0 +1,107 @@
+
+{
+    "dataset_path": "data/customer_data.csv",
+
+    "reports_dir": "reports",
+    "visualizations_dir": "visualizations",
+    "history_dir": "history",
+
+    "categorical_columns": [
+        "Status",
+        "City",
+        "Country"
+    ],
+
+    "schema": {
+        "expected_columns": [],
+        "allow_extra_columns": true
+    },
+
+    "quality_weights": {
+        "completeness": 0.20,
+        "accuracy": 0.20,
+        "uniqueness": 0.15,
+        "consistency": 0.15,
+        "validity": 0.15,
+        "timeliness": 0.15
+    },
+
+    "rules": {
+        "required_columns": [
+            "Customer_ID",
+            "Email",
+            "Age"
+        ],
+
+        "blank_check_columns": [
+            "Email",
+            "City"
+        ],
+
+        "unique_columns": [
+            "Customer_ID"
+        ],
+
+        "unique_combinations": [],
+
+        "check_duplicate_rows": true,
+
+        "expected_types": {
+            "Age": "integer",
+            "Revenue": "number"
+        },
+
+        "ranges": {
+            "Age": {
+                "min": 18,
+                "max": 100
+            },
+            "Revenue": {
+                "min": 0
+            }
+        },
+
+        "regex": {
+            "Email": "^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}$"
+        },
+
+        "allowed_values": {
+            "Status": [
+                "Active",
+                "Inactive"
+            ]
+        },
+
+        "date_rules": {
+            "Joining_Date": {
+                "not_in_future": true
+            }
+        },
+
+        "foreign_keys": [],
+
+        "standard_values": {},
+
+        "accuracy_checks": [],
+
+        "outlier_columns": [
+            "Revenue"
+        ],
+
+        "outlier_method": "iqr",
+
+        "zscore_threshold": 3.0,
+
+        "freshness": {},
+
+        "distribution_monitoring": {
+            "enabled": false,
+            "columns": [
+                "Status",
+                "City"
+            ],
+            "max_category_share_change": 0.20,
+            "update_baseline": false
+        }
+    }
+}
